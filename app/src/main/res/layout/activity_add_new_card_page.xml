@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNewCardPage">
+
+    <ImageButton
+        android:background="@color/trans"
+        android:id="@+id/backbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="27dp"
+        android:src="@drawable/backbtn" />
+
+    <TextView
+        android:id="@+id/paymenttxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:text="Add New Card"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+
+        android:id="@+id/fullnametxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Name"
+        android:layout_marginHorizontal="27dp"
+        android:layout_below="@id/backbtn"
+        android:textColor="@color/gray"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/fullnameedtxt"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginHorizontal="27dp"
+        android:layout_below="@id/fullnametxt"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_bg"
+        android:paddingStart="20dp" />
+
+    <TextView
+        android:id="@+id/emailtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fullnameedtxt"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="27dp"
+        android:text="Card Number"
+        android:textColor="@color/gray"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/emailedtxt"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_below="@id/emailtxt"
+        android:layout_marginHorizontal="27dp"
+        android:paddingStart="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_bg"/>
+
+    <TextView
+
+        android:id="@+id/expirestxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Expires"
+        android:layout_marginStart="27dp"
+        android:layout_below="@id/emailedtxt"
+        android:textColor="@color/gray"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/expiresedtxt"
+        android:layout_width="150dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/expirestxt"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_bg"
+        android:paddingStart="20dp" />
+
+    <TextView
+        android:id="@+id/cvvtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailedtxt"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@id/expirestxt"
+        android:text="Cvv"
+        android:textColor="@color/gray"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/cvvedtxt"
+        android:layout_width="150sp"
+        android:layout_height="65dp"
+        android:layout_toEndOf="@id/expiresedtxt"
+        android:layout_below="@id/expirestxt"
+        android:layout_marginHorizontal="27dp"
+        android:paddingStart="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_bg"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/donepay"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="27dp"
+        android:layout_below="@id/cvvedtxt"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/savebtn"
+        android:layout_width="258dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/signuproundedbtn"
+        android:text="SAVE"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+</RelativeLayout>

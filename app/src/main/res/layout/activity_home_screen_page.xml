@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeScreenPage">
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/my_drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        tools:ignore="HardcodedText">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="74dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="37dp">
+
+                    <ImageButton
+                        android:id="@+id/menubtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/trans"
+                        android:src="@drawable/menuimg" />
+
+                    <ImageView
+                        android:id="@+id/locationimg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/locationimg" />
+
+                    <ImageView
+                        android:id="@+id/homeimg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="15dp"
+                        android:src="@drawable/homeimg" />
+
+                    <TextView
+                        android:id="@+id/menutxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/menubtn"
+                        android:layout_marginStart="15dp"
+                        android:text="What would you like \nto order"
+                        android:textColor="@color/black"
+                        android:textSize="34sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/searchBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/menutxt"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="75dp"
+                        android:background="@drawable/search_gb"
+                        android:drawableLeft="@drawable/ic_baseline_search_24"
+                        android:drawablePadding="5dp"
+                        android:layout_marginStart="15dp"
+                        android:elevation="3dp"
+                        android:hint="Search Store"
+                        android:padding="13dp" />
+
+                    <ImageButton
+                        android:id="@+id/restview"
+                        android:background="@color/trans"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/menutxt"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="3dp"
+                        android:src="@drawable/setsearch" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/Category_Recycler_View"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/searchBar"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="10dp" />
+                    <LinearLayout
+                        android:id="@+id/view_all"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:orientation="horizontal"
+                        android:layout_below="@id/Category_Recycler_View">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Featured restaurants"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"/>
+                        <ImageButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="25dp"
+                            android:src="@drawable/view_all_btn"/>
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/featured_resycler_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/view_all"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="9dp" />
+
+                    <TextView
+                        android:id="@+id/populartxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/featured_resycler_view"
+                        android:layout_weight="1"
+                        android:text="Popular items"
+                        android:layout_marginStart="15dp"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/popular_resycler_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/populartxt"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="9dp" />
+
+                </RelativeLayout>
+
+
+            </androidx.core.widget.NestedScrollView>
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar4"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                android:layout_alignParentBottom="true">
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:id="@+id/l9"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="5"
+                android:layout_alignParentBottom="true">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="27dp"
+                    android:src="@drawable/home1"
+                    android:layout_weight="1"
+                    android:layout_alignParentBottom="true"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="27dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_weight="1"
+                    android:src="@drawable/home2" />
+                <ImageButton
+                    android:id="@+id/cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="27dp"
+                    android:background="@color/trans"
+                    android:layout_weight="1"
+                    android:src="@drawable/home3"
+                    android:layout_alignParentBottom="true"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="27dp"
+                    android:src="@drawable/home4"
+                    android:layout_weight="1"
+                    android:layout_alignParentBottom="true"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="27dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/home5"
+                    android:layout_alignParentBottom="true"
+                    />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <!-- this the navigation view which draws and shows the navigation drawer -->
+        <!-- include the menu created in the menu folder -->
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigation_View"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/nav_header_main"
+            app:itemTextColor="@color/black"
+            app:itemVerticalPadding="10dp"
+            app:itemHorizontalPadding="40dp"
+            app:menu="@menu/navigation_menu" />
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+</RelativeLayout>

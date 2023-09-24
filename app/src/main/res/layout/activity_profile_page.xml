@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilePage">
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="120dp"
+        android:layout_height="20dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/profile3"
+        android:layout_toEndOf="@id/r1"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/profile1" />
+    <ImageView
+        android:id="@+id/profile2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/profile2"
+        android:layout_alignParentStart="true"
+        />
+    <ImageButton
+        android:id="@+id/backbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/backbtn"
+        android:background="@color/trans"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="15dp"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="108dp"
+        android:id="@+id/card1"
+        android:layout_height="108dp"
+        app:cardCornerRadius="54dp"
+        android:layout_below="@id/backbtn"
+        android:layout_centerHorizontal="true"
+        >
+    <androidx.cardview.widget.CardView
+        android:layout_width="90dp"
+        android:id="@+id/card2"
+        android:layout_height="90dp"
+        app:cardCornerRadius="45dp"
+        android:layout_below="@id/backbtn"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/profileimg"/>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="27dp"
+        android:id="@+id/card3"
+        android:layout_height="27dp"
+        app:cardCornerRadius="14dp"
+        android:layout_below="@id/backbtn"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="70dp"
+        >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/profilecam"
+                android:layout_gravity="center"/>
+
+    </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/profilename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eljad Eendaz"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:layout_below="@id/card1"
+
+        />
+    <TextView
+        android:id="@+id/editprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Profile"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/gray"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_below="@id/profilename"
+
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/editprofile"
+        android:layout_marginHorizontal="18dp"
+
+        >
+        <TextView
+
+            android:id="@+id/fullnametxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Full name"
+            android:textColor="@color/gray"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/fullnameedtxt"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_below="@id/fullnametxt"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_bg"
+            android:hint="Your email or phone"
+            android:paddingStart="20dp" />
+
+        <TextView
+            android:id="@+id/emailtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fullnameedtxt"
+            android:layout_marginTop="10dp"
+            android:text="E-mail"
+            android:textColor="@color/gray"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/emailedtxt"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_below="@id/emailtxt"
+            android:paddingStart="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_bg"
+            android:hint="example@gmail.com" />
+
+        <TextView
+            android:id="@+id/phonetxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emailedtxt"
+            android:layout_marginTop="10dp"
+            android:text="Phone Number"
+            android:textColor="@color/gray"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/passedtxt"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_below="@id/phonetxt"
+            android:paddingStart="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_bg"
+            android:hint="Password" />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

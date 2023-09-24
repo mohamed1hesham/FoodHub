@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">FoodHub</string>
+    <string name="vertxt">Please type the verification code sent to prelookstudio@gmail.com</string>
+    <string name="resettxt">Please enter your email address to request a password reset</string>
+    <string name="regtxt">Enter your phone number to verify \nyour account</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="seerevies"><u>See Review</u></string>
+    <string name="foodreview">How was your last \norder Ground Beef ?</string>
+
+    <string name="none" translatable="false">none</string>
+    <string name="detaileddetails">Brown the beef better. Lean ground beef – I \nlike to use 85% lean angus. Garlic – use fresh \nchopped. Spices – chili powder, cumin, onion \npowder.</string>
+</resources>

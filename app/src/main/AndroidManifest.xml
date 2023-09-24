@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.foodhub">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FoodHub"
+        tools:targetApi="31">
+        <activity
+            android:name=".Resturantpage"
+            android:exported="false" />
+        <activity
+            android:name=".DeliveryAddress"
+            android:exported="false" />
+        <activity
+            android:name=".CartPage"
+            android:exported="false" />
+        <activity
+            android:name=".AddNewCardPage"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentPage"
+            android:exported="false" />
+        <activity
+            android:name=".RatingPage"
+            android:exported="false" />
+        <activity
+            android:name=".AddNewAddressPage"
+            android:exported="false" />
+        <activity
+            android:name=".ReviewFoodPage"
+            android:exported="false" />
+        <activity
+            android:name=".MyOrdersUpcomingPage"
+            android:exported="false" />
+        <activity
+            android:name=".MyOrdersHistory"
+            android:exported="false" />
+        <activity
+            android:name=".ResturantProfilePage"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilePage"
+            android:exported="false" />
+        <activity
+            android:name=".FoodDetails"
+            android:exported="false" />
+        <activity
+            android:name=".doneac"
+            android:exported="false" />
+        <activity
+            android:name=".HomeScreenPage"
+            android:exported="false" />
+        <activity
+            android:name=".phoneRegistrationPage"
+            android:exported="false" />
+        <activity
+            android:name=".ResetPasswordPage"
+            android:exported="false" />
+        <activity
+            android:name=".VerificationCodePage"
+            android:exported="false" />
+        <activity
+            android:name=".onboardingThree"
+            android:exported="false" />
+        <activity
+            android:name=".onboardingTwo"
+            android:exported="false" />
+        <activity
+            android:name=".onboardingOne"
+            android:exported="false" />
+        <activity
+            android:name=".LoginPage"
+            android:exported="false" />
+        <activity
+            android:name=".SignupPage"
+            android:exported="false" />
+        <activity
+            android:name=".WelcomePage"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

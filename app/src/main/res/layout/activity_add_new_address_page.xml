@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNewAddressPage">
+
+    <ImageButton
+        android:id="@+id/backbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/trans"
+        android:src="@drawable/backbtn" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:text="Add new address"
+
+        android:textColor="@color/black"
+        android:textSize="19dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/emailtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/backbtn"
+        android:layout_marginTop="5dp"
+        android:text="Full name"
+        android:layout_marginHorizontal="35dp"
+        android:textColor="@color/gray"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/emailedtxt"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_below="@id/emailtxt"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_bg"
+        android:layout_marginHorizontal="35dp"
+        android:hint="Your email or phone"
+        android:paddingStart="20dp" />
+
+    <TextView
+        android:id="@+id/passtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="35dp"
+        android:layout_below="@id/emailedtxt"
+        android:layout_marginTop="8dp"
+        android:text="Mobile number"
+        android:textColor="@color/gray"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/mobileedtxt"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginHorizontal="35dp"
+        android:layout_below="@id/passtxt"
+        android:paddingStart="20dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_bg"
+        android:hint="Password" />
+    <TextView
+        android:id="@+id/statetxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="35dp"
+        android:layout_below="@id/mobileedtxt"
+        android:layout_marginTop="8dp"
+        android:text="State"
+        android:textColor="@color/gray"
+        android:textSize="17sp" />
+    <Spinner
+        android:id="@+id/statesp"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_below="@id/statetxt"
+        android:background="@drawable/edit_bg"
+        android:layout_marginHorizontal="35dp"
+        android:layout_marginTop="8dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/statetxt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="50dp"
+        android:src="@drawable/arrow" />
+    <TextView
+        android:id="@+id/citytxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="35dp"
+        android:layout_below="@id/statesp"
+        android:layout_marginTop="8dp"
+        android:text="City"
+        android:textColor="@color/gray"
+        android:textSize="17sp" />
+    <Spinner
+        android:id="@+id/citysp"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_below="@id/citytxt"
+        android:background="@drawable/edit_bg"
+        android:layout_marginHorizontal="35dp"
+        android:layout_marginTop="8dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow"
+        android:layout_below="@id/citytxt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="35dp"/>
+    <TextView
+        android:id="@+id/streettxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="35dp"
+        android:layout_below="@id/citysp"
+        android:layout_marginTop="8dp"
+        android:text="Street (Include house number)"
+        android:textColor="@color/gray"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/streetextxt"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginHorizontal="35dp"
+        android:layout_below="@id/streettxt"
+        android:paddingStart="20dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_bg"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/savebtn"
+        android:layout_width="258dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/signuproundedbtn"
+        android:text="SAVE"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+
+</RelativeLayout>

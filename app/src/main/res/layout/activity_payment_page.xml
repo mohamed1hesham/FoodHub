@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentPage">
+    <ImageButton
+        android:background="@color/trans"
+        android:id="@+id/backbtn"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="27dp"
+        android:layout_marginStart="16dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/backbtn"/>
+
+    <TextView
+        android:id="@+id/paymenttxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:text="Payment"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/shiptxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shipping to"
+        android:layout_marginStart="28dp"
+        android:layout_below="@id/backbtn"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/shippingloc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shiptxt"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="28dp"
+        android:src="@drawable/shippingimg"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shiptxt"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="55dp"
+        android:src="@drawable/location2"/>
+    <TextView
+        android:id="@+id/paymentmethodtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment Method"
+        android:layout_marginStart="28dp"
+        android:layout_below="@id/shippingloc"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/addnewcard"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/paymentmethodtxt"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/addnew" />
+
+    <ImageView
+        android:id="@+id/master"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/paymentmethodtxt"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@id/addnewcard"
+        android:src="@drawable/master" />
+    <ImageView
+        android:id="@+id/paypal"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/paypal"
+        android:layout_below="@id/paymentmethodtxt"
+        android:layout_toEndOf="@id/master"
+        android:layout_marginStart="20dp"/>
+    <ImageView
+        android:id="@+id/apple"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/apple"
+        android:layout_below="@id/paymentmethodtxt"
+        android:layout_toEndOf="@id/paypal"
+        android:layout_marginStart="20dp"/>
+
+    <ImageView
+        android:id="@+id/visa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/paypal"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/visa" />
+
+    <TextView
+        android:id="@+id/totaltxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Pay"
+        android:layout_marginStart="28dp"
+        android:layout_below="@id/visa"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/totalprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$59.08"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/visa"
+        android:textColor="@color/black"
+        android:layout_marginEnd="39dp"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submitbtn"
+        android:layout_width="258dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/signuproundedbtn"
+        android:text="SUBMIT"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+</RelativeLayout>

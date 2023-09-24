@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerificationCodePage">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/circle3"
+        android:layout_alignParentEnd="true"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/circle4"
+        android:layout_alignParentStart="true"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/circle2"
+        android:layout_alignParentStart="true"
+
+        />
+    <ImageButton
+        android:id="@+id/backbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/backbtn"
+        android:background="@color/trans"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/backbtn"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="200dp">
+        <TextView
+            android:id="@+id/logintxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verification Code"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/vertxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logintxt"
+            android:layout_marginTop="8dp"
+            android:text="@string/vertxt"
+            android:textColor="@color/gray"
+            android:textSize="17sp" />
+
+        <com.chaos.view.PinView
+            android:id="@+id/pinview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vertxt"
+            android:layout_centerInParent="true"
+            app:itemCount="5"
+            app:itemHeight="65dp"
+            app:hideLineWhenFilled="true"
+            android:layout_marginTop="20dp"
+            app:itemWidth="65dp"
+            android:cursorVisible="true"
+            app:cursorWidth="2dp"
+            app:lineWidth="1.5dp"
+            app:lineColor="@color/orange"
+            app:itemRadius="15dp"
+            app:viewType="rectangle"
+            android:inputType="number"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:id="@+id/txtsign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pinview"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="17dp"
+            android:textStyle="bold"
+            android:layout_marginEnd="3dp"
+            android:text="I don’t recevie a code! "
+            android:textColor="@color/darkGray"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtsignin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pinview"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:layout_marginTop="17dp"
+            android:layout_toEndOf="@+id/txtsign"
+            android:text="Please resend"
+            android:textColor="@color/orange"
+            android:textSize="15sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/verbtn"
+            android:layout_width="258dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/txtsignin"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/signuproundedbtn"
+            android:text="VERIFY"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
